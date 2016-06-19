@@ -37,6 +37,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2:1.4.191')
     compile('org.jdbi:jdbi:2.72')
+    compile('org.antlr:stringtemplate:3.2.1')
+
 
     testCompile("junit:junit")
 }
