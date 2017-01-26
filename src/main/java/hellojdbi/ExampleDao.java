@@ -34,7 +34,7 @@ public class ExampleDao {
     }
 
     public List<Example> getWhere(String name, long minimumId) {
-        String where = String.format("name = '%s' AND id > %s", name, minimumId);
+        String where = String.format("name = '%s' AND id >= %s", name, minimumId);
         return db.getWhere(where);
     }
 

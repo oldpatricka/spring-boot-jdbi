@@ -32,7 +32,7 @@ public class HelloController {
                 .map(i -> i.toString())
                 .collect(Collectors.joining(", "));
 
-        return String.format("Created example '%s' with id '%d'\nFound %s", createdExample.getName(), createdExample.getId(), wheresJoined);
+        return String.format("Created example '%s' with id '%d'\nFound ids of at least 2: '%s'\n", createdExample.getName(), createdExample.getId(), wheresJoined);
 
     }
 }
